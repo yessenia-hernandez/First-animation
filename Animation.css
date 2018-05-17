@@ -100,42 +100,53 @@ body {
 @keyframes example2 {
     10% {
         opacity: 1;
+         background: green;
 
     }
     20% {
         opacity: 1;
+         background: green;
 
     }
     30% {
         opacity: .33;
+         background: blue;
 
     }
     40% {
         opacity: .33;
+        background: blue;
+
 
     }
     50% {
         opacity: 1;
+        background: green;
 
     }
     60% {
         opacity: 1;
+        background: green;
 
     }
     70% {
         opacity: .33;
+        background: blue;
 
     }
     80% {
         opacity: .33;
+        background: blue;
 
     }
     90% {
         opacity: 1;
+        background: green;
 
     }
     100% {
         opacity: 1;
+        background: green;
 
     }
 }
@@ -143,8 +154,6 @@ body {
 div {
     position: relative;
 }
-
-/* The element to apply the animation to */
 
 #animate1 {
     animation-name: example;
@@ -157,11 +166,11 @@ div {
 #animate2 {
     animation-name: example2;
     animation-duration: 10s;
+       animation-iteration-count: infinite;
         animation-iteration-count: ease-out;
   width: 80px;
   height: 80px;
   position: absolute;
-  background: red;
   top: 320px;
   left: 0;
 }
