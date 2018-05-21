@@ -1,4 +1,5 @@
 /* The animation code */
+
 body {
     background-color: powderblue;
 }
@@ -9,7 +10,6 @@ body {
         top: 0px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 20px;
         height: 20px;
         border: 1rem solid;
@@ -19,7 +19,6 @@ body {
         top: 750px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 20px;
         height: 20px;
         border: 1rem solid;
@@ -29,7 +28,6 @@ body {
         top: 0px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 20px;
         height: 20px;
         border: 1rem solid;
@@ -39,7 +37,6 @@ body {
         top: 750px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 20px;
         height: 20px;
         border: 1rem solid;
@@ -49,7 +46,6 @@ body {
         top: 0px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 20px;
         height: 20px;
         border: 1rem solid;
@@ -59,7 +55,6 @@ body {
         top: 750px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 80px;
         height: 80px;
         border: thick double #000000;
@@ -69,7 +64,6 @@ body {
         top: 0px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 80px;
         height: 80px;
         border: thick double #000000;
@@ -79,7 +73,6 @@ body {
         top: 750px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 80px;
         height: 80px;
         border: thick double #000000;
@@ -89,28 +82,28 @@ body {
         top: 0px;
         width: 20px;
         height: 20xp;
-        background-color: rebeccapurple;
         width: 80px;
         height: 80px;
         border: thick double #000000;
     }
 }
+
 /* The animation code */
 
 @keyframes example2 {
     10% {
         opacity: 1;
-         background: green;
+        background: green;
 
     }
     20% {
         opacity: 1;
-         background: green;
+        background: green;
 
     }
     30% {
         opacity: .33;
-         background: blue;
+        background: blue;
 
     }
     40% {
@@ -157,20 +150,35 @@ div {
 
 #animate1 {
     animation-name: example;
-    animation-duration: 15s;
+    animation-duration: 25s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    background-color: rebeccapurple;
 }
+
 
 #animate2 {
     animation-name: example2;
     animation-duration: 10s;
-       animation-iteration-count: infinite;
-        animation-iteration-count: ease-out;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 320px;
-  left: 0;
+    animation-iteration-count: infinite;
+    animation-iteration-count: ease-out;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 320px;
+    left: 0;
+}
+
+#animate2:hover {
+    border: 1rem solid;
+    transform: skew(30deg, 20deg);
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    animation-duration: .5s;
+}
+
+#animate2:active {
+    transform: scale(3);
+    animation-duration: 10s;
+        filter: none;
 }
